@@ -1,3 +1,4 @@
+import time
 import os
 
 def exemplo_string():
@@ -113,7 +114,7 @@ def exemplo_while():
 
         i = 0
         while i < 3:
-            Time1: str = input("Time 1")
+            time1: str = input("Time 1")
             time1_gols: int = int(input("Gols " + time1 + ": "))
 
             Time2: str = input("Time 2")
