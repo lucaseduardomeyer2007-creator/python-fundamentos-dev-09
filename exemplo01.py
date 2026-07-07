@@ -136,7 +136,7 @@ def exemplo_while():
             time.sleep(2)
 
             limpar_terminal = input("Deseja limpar terminal [y/n]")
-            if limpar_terminal == "y";
+            if limpar_terminal == "y":
                 os.system("cls")
 
             i = i + 1

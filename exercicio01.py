@@ -162,8 +162,33 @@ def exercicio_17_numeros_pares():
         i += 2
 
 
-def exercicio_18_repetir_mensagem():
-    
-        
+def exercicio_18_repetir_mensagem():    
+    mensagem: str = input("Digite uma mensagem ")
+    quantidade: int = int(input("Digite a quantidade de vezes "))
+    i = 0
 
-exercicio_17_numeros_pares()
+
+    while i < quantidade:
+        print(mensagem)
+        i += 1
+
+
+def exercicio_19_somar_1_ate_n():
+    numero: int = int(input("Digite um número"))
+    soma = soma + numero
+
+    i = 0
+
+
+    while i < numero:
+        print(soma)
+        i += 1
+
+
+
+
+
+
+
+
+exercicio_19_somar_1_ate_n()
