@@ -88,7 +88,7 @@ def exercicio_08():
     print(f" primeira nota: {notas[0]}")
     print(f" Última nota: {notas[3]}")
 
-    notas[1] = int(input("Digite uma nova nota pra segunda nota "))
+    notas[1] = 10
     notas.remove(notas[2])
     print(notas)
     soma = notas[0] + notas[1] + notas[2]
