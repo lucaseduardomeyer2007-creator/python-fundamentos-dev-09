@@ -70,4 +70,27 @@ def cadastrar_produto():
 
 
 def editar_empresa(): 
+    id = 16
     url = f"{url_base}/api/v1/empresa/{id}"
+
+    empresa = {
+        "nome": "Ação",
+        "cnpj": "74.161.306/0001-66"
+    }
+    resposta = requests.put(url, json=empresa)  
+    print("Status Code:", resposta.status_code)
+
+
+
+def editar_produto():
+    id = 15
+    url = f"{url_base}/api/v1/empresa/{id}"
+
+    produto = {
+        "nome": "Xbox",
+        "preco": "4.800,00",
+        "categoria": "eletrônico"
+    }
+
+    resposta = request.put(url, json=produto)
+    print("Status Code: ", resposta.status_code)
