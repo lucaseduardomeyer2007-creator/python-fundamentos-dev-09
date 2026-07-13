@@ -92,5 +92,5 @@ def editar_produto():
         "categoria": "eletrônico"
     }
 
-    resposta = request.put(url, json=produto)
+    resposta = requests.put(url, json=produto)
     print("Status Code: ", resposta.status_code)
