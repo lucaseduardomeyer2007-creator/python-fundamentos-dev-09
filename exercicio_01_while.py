@@ -138,7 +138,7 @@ def exercicio_15_login_simples():
     usuario: str = input("Digite seu usuário")
     senha: int = int(input("Digite sua senha"))
 
-    if usuario == admin or senha == 1234:
+    if usuario == "admin" or senha == 1234:
         print("Login realizado com sucesso")
 
     else: 

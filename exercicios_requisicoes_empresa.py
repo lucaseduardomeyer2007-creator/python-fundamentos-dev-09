@@ -81,10 +81,9 @@ def editar_empresa():
     print("Status Code:", resposta.status_code)
 
 
-
 def editar_produto():
     id = 15
-    url = f"{url_base}/api/v1/empresa/{id}"
+    url = f"{url_base}/api/v1/empresa/produtos/{id}"
 
     produto = {
         "nome": "Xbox",
@@ -94,3 +93,22 @@ def editar_produto():
 
     resposta = requests.put(url, json=produto)
     print("Status Code: ", resposta.status_code)
+
+
+def apagar_empresa():
+    id = 12
+
+    url = f"{url_base}/api/v1/empresa/{id}"
+
+    resposta = requests.delete(url)
+    print("Status Code: ", resposta.status_code)
+
+
+def apagar_produto():
+    id = 10
+    url = f"{url_base}/api/v1/empresa/produtos/{id}"
+
+    resposta = requests.delete(url)
+    print("Status Code:", resposta.status_code)
+
+

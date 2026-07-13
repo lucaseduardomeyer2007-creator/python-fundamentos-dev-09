@@ -117,7 +117,7 @@ def exemplo_while():
             time1: str = input("Time 1")
             time1_gols: int = int(input("Gols " + time1 + ": "))
 
-            Time2: str = input("Time 2")
+            time2: str = input("Time 2")
             time2_gols: int = int(input("Gols " + time2 + ": "))
 
             placar = str(time1_gols) + "x" + str(time2_gols)
