@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, List
 
 
 def exercicio01():
@@ -59,4 +59,100 @@ def exercicio05():
         print(item)
 
 
-exercicio05()
+
+def exercicio06():
+    
+    jogos = [
+            {
+            "nome_jogo": "Batman",
+            "genero": "ação",
+            "ano_lancamento": "2007",
+            "preco": "100,00"
+        },
+
+        {
+            "nome_jogo": "Gow ragnarok",
+            "genero": "Aventura",
+            "ano_lancamento": "2022",
+            "preco": "349,90"
+        }
+    ]
+
+    for jogo in jogos: #Percorrendo a lista que logo abaixo fazendo outro for, será possível percorrer o dicionário
+        # para poder usar o .items que não é possível usar em uma lista 
+        for chave, valor in jogo.items():
+            print(f"{chave}: {valor}")
+
+
+
+def exercicio07():
+    produtos = [
+    {
+        "id": 1,
+        "nome": "Homem-Aranha",
+        "categoria": "brinquedo",
+        "preco": 49.90,
+        "estoque": 3
+    },
+    {
+        "id": 2,
+        "nome": "iphone",
+        "categoria": "eletronico",
+        "preco": 5000,
+        "estoque": 2
+    },
+    {
+        "id": 3,
+        "nome": "TV LED 65 POL",
+        "categoria": "Eletrodoméstico",
+        "preco": 6000,
+        "estoque": 2
+    },
+    {
+        "id": 4,
+        "nome": "Woody",
+        "categoria": "brinquedo",
+        "preco": 199.90,
+        "estoque": 3
+    },
+    {
+        "id": 5,
+        "nome": "Notebook Acer nitro v15",
+        "categoria": "eletronico",
+        "preco": 6899.90,
+        "estoque": 10
+    }
+]
+
+    
+    def obter_nomes_produtos():
+
+        nomes = []  
+        for produto in produtos:
+                nomes.append(produto["nome"])
+        print(nomes) 
+    
+
+    obter_nomes_produtos()
+
+
+    def obter_produtos_com_estoque_baixo():
+
+        produtos_estoque_baixo = []
+
+        for produto in produtos:
+            if produto["estoque"] < 10:
+                produtos_estoque_baixo.append(produto["nome"])
+
+        print(produtos_estoque_baixo)
+
+    obter_produtos_com_estoque_baixo()
+
+
+    def obter_produtos_por_categoria():
+        produtos_filtrados = []
+        
+
+
+
+exercicio07()
