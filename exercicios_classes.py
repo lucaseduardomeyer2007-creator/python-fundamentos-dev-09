@@ -105,3 +105,25 @@ class Triangulo:
             triangulo = "Não é um triângulo equilátero"
 
         return triangulo
+
+def exemplox_triangulo():
+    triangulo = Triangulo(3, 2,60, 3, 3, 3)
+    triangulo2 = Triangulo(4, 4.58, 5, 5, 5)
+
+    triangulo.apresentar_dados()
+    triangulo2.apresentar_dados()
+    
+    triangulo.calcular_area()
+    triangulo2.calcular_area()
+    
+    triangulo.verificar_equilatero()
+    triangulo2.verificar_equilatero()
+
+
+
+class Quadrado:
+    def __init__(self, lado: float):
+        self.lado = lado
+
+    
+    
