@@ -16,3 +16,10 @@ class Funcionario:
 
     def gerar_nome_completo(self):
         return f"{self.nome} {self.sobrenome}"
+    
+
+def exemplo_funcionario():
+    pessoa = pessoa("Ronaldo", "Femomemo")
+    print("Nome Completo:", pessoa.gerar_nome_completo())
+
+
