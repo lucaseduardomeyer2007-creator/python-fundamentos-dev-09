@@ -19,7 +19,7 @@ class Funcionario(Pessoa):
 
 def exemplo_funcionario():
     pessoa = Pessoa("Ronaldo", "femomemo")
-    print("Nome completo: ", pessoa.gerar_nome_copleto())
+    print("Nome completo: ", pessoa.gerar_nome_completo())
 
     funcionario  = Funcionario("Lionel", "Messi", "adiministrativo")
-    print("Nome completo do funcionaro: ", funcionario.gerar_nome_copleto())
+    print("Nome completo do funcionaro: ", funcionario.gerar_nome_completo())
